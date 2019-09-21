@@ -24,9 +24,9 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function About() {
-  return <h2>About</h2>;
-}
+//function Reg() {
+  //return <h2>Reg</h2>;
+//}
 
 function Topic({ match }) {
   return <h3>Requested Param: {match.params.id}</h3>;
@@ -63,7 +63,7 @@ function Header() {
         <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/reg">Reg</Link>
       </li>
       <li>
         <Link to="/topics">Topics</Link>
