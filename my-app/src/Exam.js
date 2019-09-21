@@ -31,12 +31,7 @@ export default class Exam extends Component {
       
       <form onSubmit={this.handleSubmit}>
 
-      <img src="1stExamPic.jpg" width="600px" height="200px"/> 
-      <img src="2ndExamPic.jpg" width="600px" height="200px"/>
-      <img src="3rdExamPic.jpg" width="600px" height="200px"/>
-      <img src="4thExamPic.jpg" width="600px" height="200px"/>
-      <img src="5thExamPic.jpg" width="600px" height="200px"/>
-      <img src="6thExamPicture.jpg" width="600px" height="200px"/>    
+      <img src="1stExamPic.jpg" width="600px" height="200px"/>    
       <h3>1. What's the mother's name? </h3>
       <input type="radio" name="q1" value="a"/> His name is Pilar.<br/>
       <input type="radio" name="q1" value="b"/> Their name is Pilar.<br/>
@@ -53,13 +48,17 @@ export default class Exam extends Component {
       <input type="radio" name="q3" value="a"/> Yes, she is<br/>
       <input type="radio" name="q3" value="b"/> Yes, he is<br/>
       <input type="radio" name="q3" value="c"/> Yes, we are.<br/>
-      <input type="radio" name="q3" value="d"/> Yes, they are.
+      <input type="radio" name="q3" value="d"/> Yes, they are. <br/>
+
+      <img src="2ndExamPic.jpg" width="600px" height="200px"/>
 
       <h3>4. Carmina's Restaurant is open ___.</h3>
       <input type="radio" name="q4" value="a"/> on Sunday<br/>
       <input type="radio" name="q4" value="b"/> on Saturday<br/>
       <input type="radio" name="q4" value="c"/> on Tuesday<br/>
-      <input type="radio" name="q4" value="d"/> on Monday
+      <input type="radio" name="q4" value="d"/> on Monday <br/>
+
+      <img src="3rdExamPic.jpg" width="600px" height="200px"/>
 
       <h3>5. How many people work at the day-care center?</h3>
       <input type="radio" name="q5" value="a"/> three<br/>
@@ -72,6 +71,9 @@ export default class Exam extends Component {
       <input type="radio" name="q6" value="b"/> Megan<br/>
       <input type="radio" name="q6" value="c"/> Juan<br/>
       <input type="radio" name="q6" value="d"/> Sally
+
+      
+      <img src="4thExamPic.jpg" width="600px" height="200px"/>
 
       <h3>7. The post office is ___ the parking lot</h3>
       <input type="radio" name="q7" value="a"/> on<br/>
@@ -117,7 +119,9 @@ export default class Exam extends Component {
       <input type="radio" name="q13" value="a"/> bought<br/>
       <input type="radio" name="q13" value="b"/> buy<br/>
       <input type="radio" name="q13" value="c"/> buying<br/>
-      <input type="radio" name="q13" value="d"/> buys
+      <input type="radio" name="q13" value="d"/> buys <br/>
+
+      <img src="5thExamPic.jpg" width="600px" height="200px"/>
 
       <h3>14. What will you learn in Ms. Cuevas's class?</h3>
       <input type="radio" name="q14" value="a"/> math<br/>
