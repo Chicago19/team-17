@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 export default class Login extends Component {
   constructor(props) {
@@ -30,10 +34,40 @@ export default class Login extends Component {
         <br/>
         <br/>
 
-      <button style={{height:'100px', width:'200px', fontSize:'20px', boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/Reg">Prospective Students Get Started </a></button>
+      <Button variant="light" style={{height:'100px', width:'200px'}}> <a href = "/Reg">Prospective Students Get Started </a></Button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button style={{height:'100px', width:'200px', fontSize:'20px',boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/ResourcePage">Current Students Click Here </a></button>
-          </div>
+      <Button variant="light" style={{height:'100px', width:'200px'}}> <a href = "/ResourcePage">Current Students Click Here </a></Button>
+      <br/>
+      <br/>
+      <Col sm={6}>
+        <Card>
+          <Card.Title>Si conoces a alguien, por favor refiéralos.</Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">If you know someone who would benefit, please refer them.</Card.Subtitle>
+        </Card>
+      </Col>
+      <br/>
+      <Col sm={6}>
+        <InputGroup>
+          <InputGroup.Prepend>
+            <InputGroup.Text>Nombre y Apellido</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl />
+        </InputGroup><br />
+        <InputGroup className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text>Correo Electrónico</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl />
+        </InputGroup>
+        <InputGroup className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text>Número de celular</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl />
+        </InputGroup>
+        <Button variant="light">Refer!</Button>
+      </Col>
+      </div>
         </body>
     );
   }
