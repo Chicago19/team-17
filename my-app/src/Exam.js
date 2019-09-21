@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Radiobox } from 'react-inputs-validation';
 
 export default class Exam extends Component {
   constructor(props) {
@@ -7,7 +8,8 @@ export default class Exam extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      job:{}
     };
   }
 
@@ -27,36 +29,8 @@ export default class Exam extends Component {
 
   render() {
     return (
-      <div >
-        
-        <form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="email" bsSize="large">
-            <FormLabel>Email</FormLabel>
-            <FormControl
-              autoFocus
-              type="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <FormLabel>Password</FormLabel>
-            <FormControl
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-            />
-          </FormGroup>
-          <Button
-            block
-            bsSize="large"
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
-        </form>
-      </div>
+      <div>Hello World</div>
+      
     );
   }
 }

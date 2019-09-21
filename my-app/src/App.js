@@ -26,33 +26,33 @@ function Home() {
   //return <h2>Reg</h2>;
 //}
 
-function Topic({ match }) {
-  return <h3>Requested Param: {match.params.id}</h3>;
-}
+// function Topic({ match }) {
+//   return <h3>Requested Param: {match.params.id}</h3>;
+// }
 
-function Topics({ match }) {
-  return (
-    <div>
-      <h2>Topics</h2>
+// function Topics({ match }) {
+//   return (
+//     <div>
+//       <h2>Topics</h2>
 
-      <ul>
-        <li>
-          <Link to={`${match.url}/components`}>Components</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
+//       <ul>
+//         <li>
+//           <Link to={`${match.url}/components`}>Components</Link>
+//         </li>
+//         <li>
+//           <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+//         </li>
+//       </ul>
 
-      <Route path={`${match.path}/:id`} component={Topic} />
-      <Route
-        exact
-        path={match.path}
-        render={() => <h3>Please select a topic.</h3>}
-      />
-    </div>
-  );
-}
+//       <Route path={`${match.path}/:id`} component={Topic} />
+//       <Route
+//         exact
+//         path={match.path}
+//         render={() => <h3>Please select a topic.</h3>}
+//       />
+//     </div>
+//   );
+// }
 
 function Header() {
   return (
@@ -64,7 +64,7 @@ function Header() {
         <Link to="/reg">Reg</Link>
       </li>
       <li>
-        <Link to="/topics">Topics</Link>
+        <Link to="/exam">Exam</Link>
       </li>
     </ul>
   );
