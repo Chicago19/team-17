@@ -29,8 +29,12 @@ export default class Exam extends Component {
   render() {
     return (
       <p> Here are the resources:
+          <br>
+          Day Cares Near 6155 S. Pulaski Rd Chicago, IL 60629 
           Teddy Bear Day Care Center
-          Little Scholars Club          
+          Little Scholars Club    
+          </br>
+                
       </p>
     );
   }
