@@ -132,8 +132,8 @@ export default class Reg extends Component {
         ICCB intake form: <input type="text" name="iccb"/>
         Empowerment survey: <input type="text" name="empowerment"/>
 
+      <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/Exam">Go to Exam</a></button>
       </form>
-    <<button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/Exam">Go to Exam</a></button>
     );
   }
 }
