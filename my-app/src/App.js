@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from './Login';
 import Reg from './Reg';
-import Exam from '.Exam'
+import Exam from './Exam'
 
 function App() {
   return (
