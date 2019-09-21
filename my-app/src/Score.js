@@ -24,13 +24,14 @@ export default class Score extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    alert("You will be emailed with a confirmation of your orientation.")
   }
 
   render() {
     return (
       <p>We have recorded your placement exam score. The next step is choosing an orientation date to come in and get started with the program.
 
-<form>
+<form onSubmit = {this.handleSubmit}>
 <p>Please select your preferred orientation date:</p>
 <div>
 <input type="radio" id="contactChoice1"
