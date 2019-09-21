@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import { Radiobox } from 'react-inputs-validation';
 
 export default class Exam extends Component {
   constructor(props) {
