@@ -34,9 +34,9 @@ export default class ResourcePage extends Component {
         <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
             <Alert.Heading>Resource Page</Alert.Heading>
         </Alert>
-          Click on the first link listed to take you to the websites of the associated resource. <br/>
+          <h5>Click on the first link listed to take you to the websites of the associated resource. <br/>
           Click on the second link listed to take you to where the the resource is located on google maps. <br/> <br/>
-
+          </h5>
           <strong>Day Care Near 6155 S. Pulaski Rd Chicago, IL 60629: </strong><br /> <br />
           <a href = "http://teddybeardaycare.com/"> Teddy Bear Day Care Center </a> <br /> <a href="https://maps.google.com/?q=6401 S Pulaski Rd, Chicago, IL 60629">Address: 6401 S Pulaski Rd, Chicago, IL 60629</a> <br />
           Phone Number: (773) 284-2292 <br /> <br />
