@@ -87,11 +87,6 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Información de Contacto</Card.Body>
             <Card.Body>
-              Domicilio: <FormControl/><br/>
-              Ciudad: <FormControl/><br/>
-              Estado: <FormControl/><br/>
-              Código Postal: <FormControl/><br/>
-              Número de celular:<FormControl/><br/>
               Número de telefono de casa: <FormControl/><br/>
               Nombre de Contacto de Emergencia: <FormControl/><br/>
               Número de celular: <FormControl/><br/>
@@ -108,15 +103,6 @@ export default class Reg extends Component {
               <Form.Check type="radio" label="No"/>
             </Card.Body>
           </Card>
-        </Col>
-        <br/>
-        <Col sm={8}>
-          <InputGroup className="mb-3">
-            <InputGroup.Prepend>
-              <InputGroup.Text>País De Origen</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl />
-          </InputGroup>
         </Col>
         <br/>
         <Col sm={4}>
@@ -216,24 +202,47 @@ export default class Reg extends Component {
           </Card>
         </Col>
         <br/>
-        <Col sm={4}>
-          <Card>
-            <Card.Body>Para uso de Oficina Solamente</Card.Body>
-            <Card.Body>
-              Registration Date: <FormControl/><br/>
-              Keyword: <FormControl/><br/>
-              Oral exam score: <FormControl/><br/>
-              Written exam score: <FormControl/><br/>
-              Level: <FormControl/><br/>
-              Testing date: <FormControl/><br/>
-              BEST exam: <FormControl/><br/>
-              ICCB intake form: <FormControl/><br/>
-              Empowerment survey: <FormControl/><br/>
-            </Card.Body>
-          </Card>
-        </Col>
+        <Card>
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label>País De Origen</Form.Label>
+              <Form.Control type="Text" placeholder="Enter country of origin" />
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridPassword">
+              <Form.Label>Número de celular</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Group controlId="formGridAddress1">
+            <Form.Label>Domicilio</Form.Label>
+            <Form.Control placeholder="1234 Main St" />
+          </Form.Group>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Ciudad</Form.Label>
+              <Form.Control />
+            </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridState">
+            <Form.Label>Estado</Form.Label>
+            <Form.Control as="select">
+              <option>Choose...</option>
+              <option>...</option>
+            </Form.Control>
+          </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridZip">
+              <Form.Label>Código Postal</Form.Label>
+              <Form.Control />
+            </Form.Group>
+          </Form.Row>
+        </Card>
+
         <br/>
-        <Button variant="outline-primary"><a href="/Exam">Submit</a></Button>
+        <Button variant="outline-primary"><a href="/Exam">Submit & Take Exam</a></Button>
       </form>
     );
   }
