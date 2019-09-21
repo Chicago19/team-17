@@ -10,7 +10,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <body>
+      <body style={{backgroundColor:'#2FABD6', height: '1000px'}}>
 
       <div align = "center">
       <br/>
@@ -22,7 +22,7 @@ export default class Login extends Component {
       <br/>
       <br/>
       <br/>
-        <img src="poderlogo.jpg" width="600px" height="200px"/>
+        <img src="poderlogo.png" width="600px" height="250px"/>
         <br/>
         <br/>
         <br/>
@@ -30,9 +30,9 @@ export default class Login extends Component {
         <br/>
         <br/>
 
-      <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/Reg">Prospective Students Get Started </a></button>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "https://poderworks.org/">Current Students Click Here </a></button>
+      <button style={{height:'100px', width:'200px', fontSize:'20px', boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/Reg">Prospective Students Get Started </a></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button style={{height:'100px', width:'200px', fontSize:'20px',boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "https://poderworks.org/">Current Students Click Here </a></button>
           </div>
         </body>
     );

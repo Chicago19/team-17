@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Login from './Login';
 import Reg from './Reg';
-import Exam from './Exam'
+import Exam from './Exam';
+import ResourcePage from './ResourcePage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/" component={Login} />
          <Route path="/reg" component={Reg} />
          <Route path="/exam" component={Exam} />
+         <Route path="/ResourcePage" component={ResourcePage} />
       </div>
     </Router>
   );
