@@ -75,7 +75,7 @@ export default class Exam extends Component {
       <hr></hr>
         <h6>Use the picture below to answer Question 4</h6>
         <img src="2ndExamPic.jpg" width="600px" height="200px" />
-      
+
         <h3>4. Carmina's Restaurant is open ___.</h3>
         <input type="radio" name="q4" value="a" /> on Sunday<br />
         <input type="radio" name="q4" value="b" /> on Saturday<br />
@@ -84,7 +84,7 @@ export default class Exam extends Component {
       <hr></hr>
         <h6>Use the picture below to answer Question 5-6</h6>
         <img src="3rdExamPic.jpg" width="600px" height="200px" />
-      
+
         <h3>5. How many people work at the day-care center?</h3>
         <input type="radio" name="q5" value="a" /> three<br />
         <input type="radio" name="q5" value="b" /> five<br />
