@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Button} from "react-bootstrap";
 import $ from 'jquery';
 import Alert from 'react-bootstrap/Alert';
 
@@ -36,7 +36,7 @@ export default class Exam extends Component {
 
     var answers = ['b', 'b', 'a', 'c', 'b', 'd', 'b', 'b', 'c', 'c', 'b', 'c', 'a', 'd', 'b', 'd', 'c', 'a', 'b', 'c'];
     for(var i = 0; i < arr.length; i++) {
-        if(arr[i] == answers[i]){
+        if(arr[i] === answers[i]){
         score++;
     }
     }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { Button, FormControl} from "react-bootstrap";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -244,7 +244,7 @@ export default class Reg extends Component {
 
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label>Estado</Form.Label>
-            <Form.Control as="select">
+            <Form.Control name = 'State'as="select">
               <option>Choose...</option>
               <option>...</option>
             </Form.Control>
@@ -252,14 +252,13 @@ export default class Reg extends Component {
 
             <Form.Group as={Col} controlId="formGridZip">
               <Form.Label>Código Postal</Form.Label>
-              <Form.Control />
+              <Form.Control name = 'Zipcode'/>
             </Form.Group>
           </Form.Row>
         </Card>
 
         <br/>
-        <Button type="submit" variant="outline-primary">Submit & Take Exam</Button>
-        //<a href="/Exam"></a>
+        <Button type="submit" variant="outline-primary"><a href = "/Exam">Submit & Take Exam</a></Button>
       </form>
     );
   }

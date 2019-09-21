@@ -18,7 +18,7 @@ const dbRoute =
 mongoose.connect(dbRoute, { useNewUrlParser: true });
 //mongoose.connect(dbRoute, { useNewUrlParser: true });
 
-let db = mongoose.connection;
+let db = mongoose.connection(localhost:8000/User);
 
 db.once('open', () => console.log('Connected to the database'));
 
@@ -46,9 +46,7 @@ router.post('/putData', (req, res) => {
   }
   data.message = message;
   data.id = id;
-  console.log(message);
-  console.log(id);
-  
+
   data.save((err) => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true });
