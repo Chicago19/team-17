@@ -216,24 +216,7 @@ export default class Reg extends Component {
           </Card>
         </Col>
         <br/>
-        <Col sm={4}>
-          <Card>
-            <Card.Body>Para uso de Oficina Solamente</Card.Body>
-            <Card.Body>
-              Registration Date: <FormControl/><br/>
-              Keyword: <FormControl/><br/>
-              Oral exam score: <FormControl/><br/>
-              Written exam score: <FormControl/><br/>
-              Level: <FormControl/><br/>
-              Testing date: <FormControl/><br/>
-              BEST exam: <FormControl/><br/>
-              ICCB intake form: <FormControl/><br/>
-              Empowerment survey: <FormControl/><br/>
-            </Card.Body>
-          </Card>
-        </Col>
-        <br/>
-        <Button variant="outline-primary"><a href="/Exam">Submit</a></Button>
+        <Button variant="outline-primary"><a href="/Exam">Submit & Take Exam</a></Button>
       </form>
     );
   }
