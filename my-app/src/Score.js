@@ -34,7 +34,7 @@ export default class Score extends Component {
       <div>
       <Alert variant="primary">
       <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
-        <Alert.Heading>Placement Exam</Alert.Heading>
+        <Alert.Heading>Orientation Scheduling</Alert.Heading>
       </Alert>
       <p>We have recorded your placement exam score. The next step is choosing an orientation date to come in and get started with the program.
 

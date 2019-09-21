@@ -38,6 +38,7 @@ export default class Current extends Component {
           <h2><a href="/ResourcePage">Resources</a> <br/>
         Click  <a href="/Activity">here</a> to practice your English!</h2>
         <h2>Track your progress <a href="/Tracker">here </a></h2>
+
       </p>
     );
   }
