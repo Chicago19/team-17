@@ -46,9 +46,9 @@ export default class Exam extends Component {
 
   render() {
     return (
-
+      
       <form onSubmit={this.handleSubmit}>
-
+        <h1>Placement Exam </h1>
         <img src="1stExamPic.jpg" width="600px" height="200px" />
         <h3>1. What's the mother's name? </h3>
         <input type="radio" name="q1" value="a" /> His name is Pilar.<br />
