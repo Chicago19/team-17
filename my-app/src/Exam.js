@@ -41,6 +41,7 @@ export default class Exam extends Component {
     }
 
     alert("Final Score: " + (score/total)*100 + "%");
+    event.preventDefault();
     return score;
 
   }
@@ -192,7 +193,7 @@ export default class Exam extends Component {
         <input type="radio" name="q20" value="d" /> twice a month <br />
         <br />
 
-        <Button variant="outline-primary">Submit</Button>
+        <Button type="submit" variant="outline-primary">Submit</Button>
         <br />
         <br />
       </form>
