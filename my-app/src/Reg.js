@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import Alert from 'react-bootstrap/Alert';
 
 export default class Reg extends Component {
   constructor(props) {
@@ -33,9 +34,9 @@ export default class Reg extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <Jumbotron>
-          Forma de Inscripción
-        </Jumbotron>
+        <Alert variant="primary">
+          <Alert.Heading>Forma de Inscripción</Alert.Heading>
+        </Alert>
         <Col sm={8}>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
@@ -232,7 +233,7 @@ export default class Reg extends Component {
           </Card>
         </Col>
         <br/>
-        <Button variant="outline-dark"><a href="/Exam">Submit</a></Button>
+        <Button variant="outline-primary"><a href="/Exam">Submit</a></Button>
       </form>
     );
   }
