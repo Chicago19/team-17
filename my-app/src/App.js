@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Textbox, Radiobox, Checkbox, Select, Textarea } from 'react-inputs-validation';
+import 'react-inputs-validation/lib/react-inputs-validation.min.css';
 import Login from './Login';
 import Reg from './Reg';
 import Exam from './Exam'
