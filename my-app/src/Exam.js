@@ -23,6 +23,25 @@ export default class Exam extends Component {
   }
 
   handleSubmit = event => {
+    alert("test");
+    var selections = [document.getElementByName("q1").value, document.getElementByName("q2").value, document.getElementByName("q3").value,
+                  document.getElementByName("q4").value, document.getElementByName("q5").value, document.getElementByName("q6").value,
+                  document.getElementByName("q7").value, document.getElementByName("q8").value, document.getElementByName("q9").value,
+                  document.getElementByName("q10").value, document.getElementByName("q11").value, document.getElementByName("q12").value,
+                  document.getElementByName("q13").value, document.getElementByName("q14").value, document.getElementByName("q15").value,
+                  document.getElementByName("q16").value, document.getElementByName("q17").value, document.getElementByName("q18").value,
+                  document.getElementByName("q19").value, document.getElementByName("q20").value];
+    var answers = ['b','b','a','c','b','d','b','b','c','c','b','c','a','d','b','d','c','a','b','c'];
+
+    if(selections[0] == answers[0]) {
+         alert("correct");
+      }
+
+    for(var i = 0; i < selections.length; i++) {
+      if(selections[i].value == answers[i]) {
+         alert("correct");
+      }
+    }
     event.preventDefault();
   }
 
@@ -70,8 +89,9 @@ export default class Exam extends Component {
       <input type="radio" name="q6" value="a"/> Dan<br/>
       <input type="radio" name="q6" value="b"/> Megan<br/>
       <input type="radio" name="q6" value="c"/> Juan<br/>
-      <input type="radio" name="q6" value="d"/> Sally <br/>
+      <input type="radio" name="q6" value="d"/> Sally<br/>
 
+      
       <img src="4thExamPic.jpg" width="600px" height="200px"/>
 
       <h3>7. The post office is ___ the parking lot</h3>
@@ -164,7 +184,14 @@ export default class Exam extends Component {
       <input type="radio" name="q20" value="b"/> about two hours<br/>
       <input type="radio" name="q20" value="c"/> often<br/>
       <input type="radio" name="q20" value="d"/> twice a month <br/>
+      <br/>
+      <input type="submit" value="Submit" />
+      <br/>
+      <br/>
       </form>
+      
+     
+      
       
     );
   }
