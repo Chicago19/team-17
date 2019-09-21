@@ -133,6 +133,7 @@ export default class Reg extends Component {
         Empowerment survey: <input type="text" name="empowerment"/>
 
       </form>
+    <<button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/Exam">Go to Exam</a></button>
     );
   }
 }
