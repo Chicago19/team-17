@@ -32,7 +32,7 @@ export default class Login extends Component {
 
       <button style={{height:'100px', width:'200px', fontSize:'20px', boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/Reg">Prospective Students Get Started </a></button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button style={{height:'100px', width:'200px', fontSize:'20px',boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/ResourcePage">Current Students Click Here </a></button>
+      <button style={{height:'100px', width:'200px', fontSize:'20px',boxShadow:'0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)',backgroundColor:'#ffffff'}}> <a href = "/Current">Current Students Click Here </a></button>
           </div>
         </body>
     );

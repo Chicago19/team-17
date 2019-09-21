@@ -5,7 +5,9 @@ import Reg from './Reg';
 import Exam from './Exam';
 import ResourcePage from './ResourcePage';
 import Score from './Score'
-
+import Current from './Current'
+import Activity from './Activity'
+import Tracker from './Tracker'
 function App() {
   return (
     <Router>
@@ -17,6 +19,9 @@ function App() {
          <Route path="/exam" component={Exam} />
          <Route path="/ResourcePage" component={ResourcePage} />
          <Route path="/Score" component={Score} />
+          <Route path="/Activity" component={Activity} />
+<Route path="/Current" component={Current} />
+<Route path="/Tracker" component={Tracker} />
       </div>
     </Router>
   );
