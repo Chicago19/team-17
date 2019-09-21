@@ -28,7 +28,6 @@ export default class ResourcePage extends Component {
 
   render() {
     return (
-      <body style={{backgroundColor:'#FFF99A', height: '1000px'}}>
       <p> <strong><u>RESOURCE PAGE</u></strong>
           <br /> <br/> 
 
@@ -54,7 +53,6 @@ export default class ResourcePage extends Component {
           <br/> Phone Number: (773) 737-7810
           
       </p>
-    </body>
     );
   }
 }

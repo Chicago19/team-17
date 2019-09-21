@@ -40,7 +40,7 @@ export default class Exam extends Component {
     }
     
     alert("Final Score: " + (score/total)*100 + "%");
-    event.preventDefault();
+    return score;
 
   }
 
