@@ -28,7 +28,7 @@ export default class Score extends Component {
 
   render() {
     return (
-      <p> You got a 18/20 on the Entrance Exam!
+      <p>We have recorded your placement exam score. The next step is choosing an orientation date to come in and get started with the program.
 
 <form>
 <p>Please select your preferred orientation date:</p>
