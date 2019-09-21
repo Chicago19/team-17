@@ -12,7 +12,7 @@ const router = express.Router();
 
 // this is our MongoDB database
 const dbRoute =
-  'mongodb+srv://ndholaria:<poder>@cluster1-0nuyu.mongodb.net/test?retryWrites=true&w=majority';
+  'mongodb+srv://ndholaria:poder@cluster1-0nuyu.mongodb.net/test?retryWrites=true&w=majority';
 
 // connects our back end code with the database
 mongoose.connect(dbRoute, { useNewUrlParser: true });
@@ -20,7 +20,7 @@ mongoose.connect(dbRoute, { useNewUrlParser: true });
 
 let db = mongoose.connection;
 
-db.once('open', () => console.log('connected to the database'));
+db.once('open', () => console.log('Connected to the database'));
 
 // checks if connection with the database is successful
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -46,6 +46,9 @@ router.post('/putData', (req, res) => {
   }
   data.message = message;
   data.id = id;
+  console.log(message);
+  console.log(id);
+  
   data.save((err) => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true });

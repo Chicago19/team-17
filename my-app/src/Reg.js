@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import Alert from 'react-bootstrap/Alert';
+import $ from 'jquery';
+const axios = require('axios');
+
 
 export default class Reg extends Component {
   constructor(props) {
@@ -27,8 +29,20 @@ export default class Reg extends Component {
     });
   }
 
-  handleSubmit = event => {
+  handleSubmit(event){
     event.preventDefault();
+    let msg = $('form').serializeArray();
+     var dataArray = $('form').serializeArray(),
+       dataObj = {};
+     $(dataArray).each(function(i, field){
+       dataObj[field.name] = field.value;
+     })
+     console.log(dataObj);
+
+     axios.post('http://localhost:3001/api/putData', {
+       id: 0,
+       message: dataObj,
+     });
   }
 
   render() {
@@ -43,21 +57,22 @@ export default class Reg extends Component {
             <InputGroup.Prepend>
               <InputGroup.Text>Nombre y Apellido</InputGroup.Text>
             </InputGroup.Prepend>
-            <FormControl />
-            <FormControl />
+            <FormControl name = "First Name"/>
+
+            <FormControl name = "Last Name"/>
           </InputGroup>
         </Col>
         <Col sm={8}>
           <InputGroup>
             <InputGroup.Prepend><InputGroup.Text>Fecha De Nacimiento</InputGroup.Text></InputGroup.Prepend>
-            <FormControl />
+            <FormControl name = 'Birth date'/>
           </InputGroup>
         </Col>
         <br/>
         <Col sm={8}>
           <InputGroup>
             <InputGroup.Prepend><InputGroup.Text>Correo Electrónico</InputGroup.Text></InputGroup.Prepend>
-            <FormControl />
+            <FormControl name = 'Email'/>
           </InputGroup>
         </Col>
         <br/>
@@ -65,11 +80,11 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Estado Civil</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Soltero/a"/>
-              <Form.Check type="radio" label="Casado/a"/>
-              <Form.Check type="radio" label="Viduo/a"/>
-              <Form.Check type="radio" label="Divorciado/a"/>
-              <input type="radio" name="Estado Civil" value=""/> Other <input type="text" name="Otro"/>
+              <Form.Check type="radio" label="Soltero/a" name = "Marital Status" value = 'Soltero/a'/>
+              <Form.Check type="radio" name = "Marital Status" label="Casado/a" value = 'Casado/a'/>
+              <Form.Check type="radio" name = "Marital Status" label="Viduo/a" value = 'Viduo/a'/>
+              <Form.Check type="radio" name = "Marital Status" label="Divorciado/a" value = 'Divorciado/a'/>
+              <input type="radio" name="Estado Civil" value=""/> Other <input type="text" name="Marital Status"/>
             </Card.Body>
           </Card>
         </Col>
@@ -78,8 +93,8 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Género</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Masculino"/>
-              <Form.Check type="radio" label="Femenino"/>
+              <Form.Check type="radio" label="Masculino" name = 'Gender'/>
+              <Form.Check type="radio" label="Femenino" name = 'Gender'/>
             </Card.Body>
           </Card>
         </Col>
@@ -88,10 +103,10 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Información de Contacto</Card.Body>
             <Card.Body>
-              Número de telefono de casa: <FormControl/><br/>
-              Nombre de Contacto de Emergencia: <FormControl/><br/>
-              Número de celular: <FormControl/><br/>
-              Parentesco: <FormControl/><br/>
+              Número de telefono de casa: <FormControl name = 'Home Phone Number'/><br/>
+            Nombre de Contacto de Emergencia: <FormControl name = 'Emergency Number'/><br/>
+          Número de celular: <FormControl name = 'Cell Number'/><br/>
+        Parentesco: <FormControl name = 'Relationship to You'/><br/>
             </Card.Body>
           </Card>
         </Col>
@@ -100,8 +115,8 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>¿Es Hispano o Latino?</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Si"/>
-              <Form.Check type="radio" label="No"/>
+              <Form.Check type="radio" name='Hispanic' value = 'Yes'label="Si"/>
+              <Form.Check type="radio" name='Hispanic' value = 'No'label="No"/>
             </Card.Body>
           </Card>
         </Col>
@@ -180,28 +195,28 @@ export default class Reg extends Component {
           </Card>
         </Col>
         <br/>
-        <Col sm={4}>
-          <Card>
-            <Card.Body>Por favor seccione el tiempo de clase preferida</Card.Body>
-            <Card.Body>
-              <Form.Check type="radio" label="Mañana" name="time" value="morning"/>
-              <Form.Check type="radio" label="Noches" name="time" value="night"/>
-            </Card.Body>
-          </Card>
-        </Col>
-        <br/>
-        <Col sm={4}>
-          <Card>
-            <Card.Body>¿Cual es su principal medio de transporte?</Card.Body>
-            <Card.Body>
-              <Form.Check type="radio" label="Caminar" name="transportation" value="walk"/>
-              <Form.Check type="radio" label="Bus" name="transportation" value="bus"/>
-              <Form.Check type="radio" label="Carro" name="transportation" value="car"/>
-              <Form.Check type="radio" label="Tren" name="transportation" value="train"/>
-              <Form.Check type="radio" label="Maneja un amigo o familiar" name="transportation" value="family/friend"/>
-            </Card.Body>
-          </Card>
-        </Col>
+          <Col sm={4}>
+            <Card>
+              <Card.Body>Por favor seccione el tiempo de clase preferida</Card.Body>
+              <Card.Body>
+                <Form.Check type="radio" name = "Time Preference" label="Mañana" value = "Mañana"/>
+                <Form.Check type="radio" name = "Time Preference" label="Noches" value = "Noches"/>
+              </Card.Body>
+            </Card>
+          </Col>
+          <br/>
+          <Col sm={4}>
+            <Card>
+              <Card.Body>¿Cual es su principal medio de transporte?</Card.Body>
+              <Card.Body>
+                <Form.Check type="radio" label="Caminar" name = "Primary Transportation" value = "Walking"/>
+                <Form.Check type="radio" name = "Primary Transportation" label="Bus" value = "Bus"/>
+                <Form.Check type="radio" name = "Primary Transportation" label="Carro" value = "Car"/>
+                <Form.Check type="radio" name = "Primary Transportation" label="Tren" value = "Train"/>
+                <Form.Check type="radio" name = "Primary Transportation"label="Maneja un amigo o familiar" value = "Carpool"/>
+              </Card.Body>
+            </Card>
+          </Col>
         <br/>
         <Card>
           <Form.Row>
@@ -243,7 +258,8 @@ export default class Reg extends Component {
         </Card>
 
         <br/>
-        <Button variant="outline-primary"><a href="/Exam">Submit & Take Exam</a></Button>
+        <Button type="submit" variant="outline-primary">Submit & Take Exam</Button>
+        //<a href="/Exam"></a>
       </form>
     );
   }
