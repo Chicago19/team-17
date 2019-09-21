@@ -184,10 +184,10 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Por favor seleccione el sitio del programa de PODER donde desea recibir las clases</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Pulaski/Marquette Bank (6155 S. Pulaski)"/>
-              <Form.Check type="radio" label="Kedzie/MFS (6422 S. Kedzie)"/>
-              <Form.Check type="radio" label="Sawyer/St. Gall Parish (5533 S. Sawyer)"/>
-              <Form.Check type="radio" label="Stevenson/MFS (8010 S. Kostner)"/>
+              <Form.Check type="radio" label="Pulaski/Marquette Bank (6155 S. Pulaski)" name="place" value="pulaski"/>
+              <Form.Check type="radio" label="Kedzie/MFS (6422 S. Kedzie)" name="place" value="kedzie"/>
+              <Form.Check type="radio" label="Sawyer/St. Gall Parish (5533 S. Sawyer)" name="place" value="sawyer"/>
+              <Form.Check type="radio" label="Stevenson/MFS (8010 S. Kostner)" name="place" value="kostner"/>
             </Card.Body>
           </Card>
         </Col>
@@ -196,8 +196,8 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>Por favor seccione el tiempo de clase preferida</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Mañana"/>
-              <Form.Check type="radio" label="Noches"/>
+              <Form.Check type="radio" label="Mañana" name="time" value="morning"/>
+              <Form.Check type="radio" label="Noches" name="time" value="night"/>
             </Card.Body>
           </Card>
         </Col>
@@ -206,11 +206,11 @@ export default class Reg extends Component {
           <Card>
             <Card.Body>¿Cual es su principal medio de transporte?</Card.Body>
             <Card.Body>
-              <Form.Check type="radio" label="Caminar"/>
-              <Form.Check type="radio" label="Bus"/>
-              <Form.Check type="radio" label="Carro"/>
-              <Form.Check type="radio" label="Tren"/>
-              <Form.Check type="radio" label="Maneja un amigo o familiar"/>
+              <Form.Check type="radio" label="Caminar" name="transportation" value="walk"/>
+              <Form.Check type="radio" label="Bus" name="transportation" value="bus"/>
+              <Form.Check type="radio" label="Carro" name="transportation" value="car"/>
+              <Form.Check type="radio" label="Tren" name="transportation" value="train"/>
+              <Form.Check type="radio" label="Maneja un amigo o familiar" name="transportation" value="family/friend"/>
             </Card.Body>
           </Card>
         </Col>
