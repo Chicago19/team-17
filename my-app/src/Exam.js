@@ -11,6 +11,7 @@ export default class Exam extends Component {
       email: "",
       password: "",
       job: {},
+      grade: 0
     };
   }
 
@@ -41,7 +42,7 @@ export default class Exam extends Component {
     }
 
     alert("Final Score: " + (score/total)*100 + "%");
-    event.preventDefault();
+    this.state.grade = (score/total)*100;
     return score;
 
   }
@@ -49,8 +50,9 @@ export default class Exam extends Component {
   render() {
     return (
 
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} action="/score">
         <Alert variant="primary">
+        <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
           <Alert.Heading>Placement Exam</Alert.Heading>
         </Alert>
         <h6>Use the picture below to answer Questions 1-3</h6>

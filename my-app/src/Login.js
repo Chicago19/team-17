@@ -24,8 +24,6 @@ export default class Login extends Component {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
         <img src="poderlogo.png" width="600px" height="250px"/>
         <br/>
         <br/>
@@ -36,7 +34,7 @@ export default class Login extends Component {
 
       <Button variant="light" style={{height:'100px', width:'200px'}}> <a href = "/Reg">Prospective Students Get Started </a></Button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <Button variant="light" style={{height:'100px', width:'200px'}}> <a href = "/ResourcePage">Current Students Click Here </a></Button>
+      <Button variant="light" style={{height:'100px', width:'200px'}}> <a href = "/Current">Current Students Click Here </a></Button>
       <br/>
       <br/>
       <Col sm={6}>
@@ -68,7 +66,7 @@ export default class Login extends Component {
         <Button variant="light">Refer!</Button>
       </Col>
       </div>
-        </body>
+      </body>
     );
   }
 }
