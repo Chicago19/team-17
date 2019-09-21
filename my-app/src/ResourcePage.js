@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import Alert from 'react-bootstrap/Alert';
 
 export default class ResourcePage extends Component {
   constructor(props) {
@@ -28,8 +29,10 @@ export default class ResourcePage extends Component {
 
   render() {
     return (
-      <p> <strong><u>RESOURCE PAGE</u></strong>
-          <br /> <br/> 
+      <p> 
+        <Alert variant="primary">
+            <Alert.Heading>Resource Page</Alert.Heading>
+        </Alert>
 
           <strong>Day Care Near 6155 S. Pulaski Rd Chicago, IL 60629: </strong><br /> <br />   
           Teddy Bear Day Care Center <br /> Address: 6401 S Pulaski Rd, Chicago, IL 60629 <br /> 
