@@ -35,8 +35,8 @@ export default class Current extends Component {
             <Alert.Heading>Current Students Landing Page</Alert.Heading>
         </Alert>
         <h1> Welcome Back! You have earned <b>1 Star</b> for logging in today! </h1>
-          <h2><a href="/ResourcePage">Resources</a> <br/>
-        Click  <a href="/Activity">here</a> to practice your English!</h2>
+          <h2>Find a list of resources <a href="/ResourcePage">here</a> <br/>
+        Practice your english <a href="/Activity">here</a></h2>
         <h2>Track your progress <a href="/Tracker">here </a></h2>
 
       </p>
