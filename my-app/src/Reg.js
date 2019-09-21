@@ -3,6 +3,7 @@ import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Col from 'react-bootstrap/Col';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Form from 'react-bootstrap/Form';
 
 export default class Reg extends Component {
   constructor(props) {
@@ -58,8 +59,7 @@ export default class Reg extends Component {
         </Col>
         <br></br>
       <text>Estado Civil:</text> <br></br>
-      <Form.Check type="radio" 
-      <input type="radio" name="Estado Civil" value="Soltero/a"/> Single<br/>
+      <Form.Check type="radio" label="Single"/>
       <input type="radio" name="Estado Civil" value="Casado/a"/> Married<br/>
       <input type="radio" name="Estado Civil" value="Viduo/a"/> Widowed<br></br>
       <input type="radio" name="Estado Civil" value="Divorciado/a"/> Divorced<br></br>
