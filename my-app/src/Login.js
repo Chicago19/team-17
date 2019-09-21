@@ -20,8 +20,6 @@ export default class Login extends Component {
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
         <img src="poderlogo.png" width="600px" height="250px"/>
         <br/>
         <br/>
