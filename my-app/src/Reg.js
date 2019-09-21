@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import InputGroup from 'react-bootstrap/InputGroup';
+import Col from 'react-bootstrap/Col';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 export default class Reg extends Component {
   constructor(props) {
@@ -28,14 +31,34 @@ export default class Reg extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-
-        Nombre: <input type="text" name="name"/>
-        Apellido:<input type="text" name="lastName"/>
-      Segunda Nombre:<input type="text" name="middleName"/>
-    <br></br>
-      Fecha De Nacimiento:<input type="text" name="DOB"/><br/>
-      Correo Electrónico: <input type="text" name="email"/><br/><br/>
+        <Jumbotron>
+          Forma de Inscripción
+        </Jumbotron>
+        <Col sm={8}>
+          <InputGroup className="mb-3">
+            <InputGroup.Prepend>
+              <InputGroup.Text>Nombre y Apellido</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl />
+            <FormControl />
+          </InputGroup>
+        </Col>
+        <Col sm={8}>
+          <InputGroup>
+            <InputGroup.Prepend><InputGroup.Text>Fecha De Nacimiento</InputGroup.Text></InputGroup.Prepend>
+            <FormControl />
+          </InputGroup>
+        </Col>
+        <br/>
+        <Col sm={8}>
+          <InputGroup>
+            <InputGroup.Prepend><InputGroup.Text>Correo Electrónico</InputGroup.Text></InputGroup.Prepend>
+            <FormControl />
+          </InputGroup>
+        </Col>
+        <br></br>
       <text>Estado Civil:</text> <br></br>
+      <Form.Check type="radio" 
       <input type="radio" name="Estado Civil" value="Soltero/a"/> Single<br/>
       <input type="radio" name="Estado Civil" value="Casado/a"/> Married<br/>
       <input type="radio" name="Estado Civil" value="Viduo/a"/> Widowed<br></br>
