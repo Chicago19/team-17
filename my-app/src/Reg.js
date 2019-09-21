@@ -27,22 +27,10 @@ export default class Reg extends Component {
     });
   }
 
-  handleSubmit(event){
+  handleSubmit = event => {
     event.preventDefault();
-    let msg = $('form').serializeArray();
-    console.log('result: ' +msg);
-    var dataArray = $('form').serializeArray(),
-      dataObj = {};
-    $(dataArray).each(function(i, field){
-      dataObj[field.name] = field.value;
-    })
-    console.log(dataObj);
-
-    axios.post('http://localhost:3001/api/putData', {
-      id: 0,
-      message: dataObj,
-    });
   }
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
