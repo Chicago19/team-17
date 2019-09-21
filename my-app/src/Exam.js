@@ -30,125 +30,130 @@ export default class Exam extends Component {
     return (
       
       <form onSubmit={this.handleSubmit}>
-      <h3>Question 1</h3>
-      <input type="radio" name="q1" value="male"/> A<br/>
-      <input type="radio" name="q1" value="female"/> B<br/>
-      <input type="radio" name="q1" value="female"/> C<br/>
-      <input type="radio" name="q1" value="other"/> D
+      <h3>1. What's the mother's name? </h3>
+      <input type="radio" name="q1" value="a"/> His name is Pilar.<br/>
+      <input type="radio" name="q1" value="b"/> Their name is Pilar.<br/>
+      <input type="radio" name="q1" value="c"/> Her name is Pilar.<br/>
+      <input type="radio" name="q1" value="d"/> Your name is Pilar.
 
-      <h3>Question 2</h3>
-      <input type="radio" name="q2" value="male"/> A<br/>
-      <input type="radio" name="q2" value="female"/> B<br/>
-      <input type="radio" name="q2" value="female"/> C<br/>
-      <input type="radio" name="q2" value="other"/> D
+      <h3>2. There are three ___ on the table.</h3>
+      <input type="radio" name="q2" value="a"/> cup<br/>
+      <input type="radio" name="q2" value="b"/> cake<br/>
+      <input type="radio" name="q2" value="c"/> cups<br/>
+      <input type="radio" name="q2" value="d"/> plate
 
-      <h3>Question 3</h3>
-      <input type="radio" name="q3" value="male"/> A<br/>
-      <input type="radio" name="q3" value="female"/> B<br/>
-      <input type="radio" name="q3" value="female"/> C<br/>
-      <input type="radio" name="q3" value="other"/> D
+      <h3>3. Is Ramona happy?</h3>
+      <input type="radio" name="q3" value="a"/> Yes, she is<br/>
+      <input type="radio" name="q3" value="b"/> Yes, he is<br/>
+      <input type="radio" name="q3" value="c"/> Yes, we are.<br/>
+      <input type="radio" name="q3" value="d"/> Yes, they are.
 
-      <h3>Question 4</h3>
-      <input type="radio" name="q4" value="male"/> A<br/>
-      <input type="radio" name="q4" value="female"/> B<br/>
-      <input type="radio" name="q4" value="female"/> C<br/>
-      <input type="radio" name="q4" value="other"/> D
+      <h3>4. Carmina's Restaurant is open ___.</h3>
+      <input type="radio" name="q4" value="a"/> on Sunday<br/>
+      <input type="radio" name="q4" value="b"/> on Saturday<br/>
+      <input type="radio" name="q4" value="c"/> on Tuesday<br/>
+      <input type="radio" name="q4" value="d"/> on Monday
 
-      <h3>Question 5</h3>
-      <input type="radio" name="q5" value="male"/> A<br/>
-      <input type="radio" name="q5" value="female"/> B<br/>
-      <input type="radio" name="q5" value="female"/> C<br/>
-      <input type="radio" name="q5" value="other"/> D
+      <h3>5. How many people work at the day-care center?</h3>
+      <input type="radio" name="q5" value="a"/> three<br/>
+      <input type="radio" name="q5" value="b"/> five<br/>
+      <input type="radio" name="q5" value="c"/> four<br/>
+      <input type="radio" name="q5" value="d"/> six
 
-      <h3>Question 6</h3>
-      <input type="radio" name="q6" value="male"/> A<br/>
-      <input type="radio" name="q6" value="female"/> B<br/>
-      <input type="radio" name="q6" value="female"/> C<br/>
-      <input type="radio" name="q6" value="other"/> D
+      <h3>6. Who works until 8:00 p.m. on Tuesday and Thursday?</h3>
+      <input type="radio" name="q6" value="a"/> Dan<br/>
+      <input type="radio" name="q6" value="b"/> Megan<br/>
+      <input type="radio" name="q6" value="c"/> Juan<br/>
+      <input type="radio" name="q6" value="d"/> Sally
 
-      <h3>Question 7</h3>
-      <input type="radio" name="q7" value="male"/> A<br/>
-      <input type="radio" name="q7" value="female"/> B<br/>
-      <input type="radio" name="q7" value="female"/> C<br/>
-      <input type="radio" name="q7" value="other"/> D
+      <h3>7. The post office is ___ the parking lot</h3>
+      <input type="radio" name="q7" value="a"/> on<br/>
+      <input type="radio" name="q7" value="b"/> on the corner of<br/>
+      <input type="radio" name="q7" value="c"/> across from<br/>
+      <input type="radio" name="q7" value="d"/> next to
 
-      <h3>Question 8</h3>
-      <input type="radio" name="q8" value="male"/> A<br/>
-      <input type="radio" name="q8" value="female"/> B<br/>
-      <input type="radio" name="q8" value="female"/> C<br/>
-      <input type="radio" name="q8" value="other"/> D
+      <h3>8. A. What are Katia and Sara doing?<br/>
+             B. They ___.</h3>
+      <input type="radio" name="q8" value="a"/> talking<br/>
+      <input type="radio" name="q8" value="b"/> is talking<br/>
+      <input type="radio" name="q8" value="c"/> are talking<br/>
+      <input type="radio" name="q8" value="d"/> talk
 
-      <h3>Question 9</h3>
-      <input type="radio" name="q9" value="male"/> A<br/>
-      <input type="radio" name="q9" value="female"/> B<br/>
-      <input type="radio" name="q9" value="female"/> C<br/>
-      <input type="radio" name="q9" value="other"/> D
+      <h3>9. Does Lee ___ a fever?</h3>
+      <input type="radio" name="q9" value="a"/> had<br/>
+      <input type="radio" name="q9" value="b"/> have<br/>
+      <input type="radio" name="q9" value="c"/> has<br/>
+      <input type="radio" name="q9" value="d"/> having
 
-      <h3>Question 10</h3>
-      <input type="radio" name="q10" value="male"/> A<br/>
-      <input type="radio" name="q10" value="female"/> B<br/>
-      <input type="radio" name="q10" value="female"/> C<br/>
-      <input type="radio" name="q10" value="other"/> D
+      <h3>10. A. When do you eat lunch?<br/>
+              B. ___ 12:30
+      </h3>
+      <input type="radio" name="q10" value="a"/> In<br/>
+      <input type="radio" name="q10" value="b"/> At<br/>
+      <input type="radio" name="q10" value="c"/> On<br/>
+      <input type="radio" name="q10" value="d"/> From
 
-      <h3>Question 11</h3>
-      <input type="radio" name="q11" value="male"/> A<br/>
-      <input type="radio" name="q11" value="female"/> B<br/>
-      <input type="radio" name="q11" value="female"/> C<br/>
-      <input type="radio" name="q11" value="other"/> D
+      <h3>11. A How many ___ do we have?<br/>
+            B Three.</h3>
+      <input type="radio" name="q11" value="a"/> tea<br/>
+      <input type="radio" name="q11" value="b"/> milk<br/>
+      <input type="radio" name="q11" value="c"/> onions<br/>
+      <input type="radio" name="q11" value="d"/> bread
 
-      <h3>Question 12</h3>
-      <input type="radio" name="q12" value="male"/> A<br/>
-      <input type="radio" name="q12" value="female"/> B<br/>
-      <input type="radio" name="q12" value="female"/> C<br/>
-      <input type="radio" name="q12" value="other"/> D
+      <h3>12. Yoldanda is a teacher now. She ____ a teacher's assistant before.</h3>
+      <input type="radio" name="q12" value="a"/> is<br/>
+      <input type="radio" name="q12" value="b"/> was<br/>
+      <input type="radio" name="q12" value="c"/> are<br/>
+      <input type="radio" name="q12" value="d"/> were
 
-      <h3>Question 13</h3>
-      <input type="radio" name="q13" value="male"/> A<br/>
-      <input type="radio" name="q13" value="female"/> B<br/>
-      <input type="radio" name="q13" value="female"/> C<br/>
-      <input type="radio" name="q13" value="other"/> D
+      <h3>13. Yesterday, Dan ___ groceries after work.</h3>
+      <input type="radio" name="q13" value="a"/> bought<br/>
+      <input type="radio" name="q13" value="b"/> buy<br/>
+      <input type="radio" name="q13" value="c"/> buying<br/>
+      <input type="radio" name="q13" value="d"/> buys
 
-      <h3>Question 14</h3>
-      <input type="radio" name="q14" value="male"/> A<br/>
-      <input type="radio" name="q14" value="female"/> B<br/>
-      <input type="radio" name="q14" value="female"/> C<br/>
-      <input type="radio" name="q14" value="other"/> D
+      <h3>14. What will you learn in Ms. Cuevas's class?</h3>
+      <input type="radio" name="q14" value="a"/> math<br/>
+      <input type="radio" name="q14" value="b"/> computer repair<br/>
+      <input type="radio" name="q14" value="c"/> TV repair<br/>
+      <input type="radio" name="q14" value="d"/> American history
 
-      <h3>Question 15</h3>
-      <input type="radio" name="q15" value="male"/> A<br/>
-      <input type="radio" name="q15" value="female"/> B<br/>
-      <input type="radio" name="q15" value="female"/> C<br/>
-      <input type="radio" name="q15" value="other"/> D
+      <h3>15. Which course meets on Mondays and Tuesdays?</h3>
+      <input type="radio" name="q15" value="a"/> GED<br/>
+      <input type="radio" name="q15" value="b"/> Introduction to Computers<br/>
+      <input type="radio" name="q15" value="c"/> TV and DVD repair<br/>
+      <input type="radio" name="q15" value="d"/> Citizenship
 
-      <h3>Question 16</h3>
-      <input type="radio" name="q16" value="male"/> A<br/>
-      <input type="radio" name="q16" value="female"/> B<br/>
-      <input type="radio" name="q16" value="female"/> C<br/>
-      <input type="radio" name="q16" value="other"/> D
+      <h3>16. A what did Joe buy Sylvia?</h3>
+      <input type="radio" name="q16" value="a"/> to her<br/>
+      <input type="radio" name="q16" value="b"/> she<br/>
+      <input type="radio" name="q16" value="c"/> them<br/>
+      <input type="radio" name="q16" value="d"/> her
 
-      <h3>Question 17</h3>
-      <input type="radio" name="q17" value="male"/> A<br/>
-      <input type="radio" name="q17" value="female"/> B<br/>
-      <input type="radio" name="q17" value="female"/> C<br/>
-      <input type="radio" name="q17" value="other"/> D
+      <h3>17. Leon has a test tomorrow. He ___ study tonight</h3>
+      <input type="radio" name="q17" value="a"/> is<br/>
+      <input type="radio" name="q17" value="b"/> will<br/>
+      <input type="radio" name="q17" value="c"/> them<br/>
+      <input type="radio" name="q17" value="d"/> her
 
-      <h3>Question 18</h3>
-      <input type="radio" name="q18" value="male"/> A<br/>
-      <input type="radio" name="q18" value="female"/> B<br/>
-      <input type="radio" name="q18" value="female"/> C<br/>
-      <input type="radio" name="q18" value="other"/> D
+      <h3>18. A When do Mr. and Mrs. Yamada usually eat dinner?</h3>
+      <input type="radio" name="q18" value="a"/> eat<br/>
+      <input type="radio" name="q18" value="b"/> ate<br/>
+      <input type="radio" name="q18" value="c"/> eats<br/>
+      <input type="radio" name="q18" value="d"/> eating
 
-      <h3>Question 19</h3>
-      <input type="radio" name="q19" value="male"/> A<br/>
-      <input type="radio" name="q19" value="female"/> B<br/>
-      <input type="radio" name="q19" value="female"/> C<br/>
-      <input type="radio" name="q19" value="other"/> D
+      <h3>19. Marcia's back is hurting. She ___ to see a doctor.</h3>
+      <input type="radio" name="q19" value="a"/> have<br/>
+      <input type="radio" name="q19" value="b"/> having<br/>
+      <input type="radio" name="q19" value="c"/> has<br/>
+      <input type="radio" name="q19" value="d"/> had
 
-      <h3>Question 20</h3>
-      <input type="radio" name="q20" value="male"/> A<br/>
-      <input type="radio" name="q20" value="female"/> B<br/>
-      <input type="radio" name="q20" value="female"/> C<br/>
-      <input type="radio" name="q20" value="other"/> D <br/>
+      <h3> 20. A How long does it take to drive to Philadelphia?<br/>
+            B It takes ___.</h3>
+      <input type="radio" name="q20" value="a"/> every day<br/>
+      <input type="radio" name="q20" value="b"/> about two hours<br/>
+      <input type="radio" name="q20" value="c"/> often<br/>
+      <input type="radio" name="q20" value="d"/> twice a month <br/>
       </form>
       
     );
