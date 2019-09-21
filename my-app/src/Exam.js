@@ -70,7 +70,7 @@ export default class Exam extends Component {
       <input type="radio" name="q6" value="a"/> Dan<br/>
       <input type="radio" name="q6" value="b"/> Megan<br/>
       <input type="radio" name="q6" value="c"/> Juan<br/>
-      <input type="radio" name="q6" value="d"/> Sally
+      <input type="radio" name="q6" value="d"/> Sally <br/>
 
       
       <img src="4thExamPic.jpg" width="600px" height="200px"/>
