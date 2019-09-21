@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div>
-  
+
 
         <Route exact path="/" component={Login} />
          <Route path="/reg" component={Reg} />
