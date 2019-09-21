@@ -32,7 +32,7 @@ export default class Login extends Component {
 
       <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/Reg">Prospective Students Get Started </a></button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "https://poderworks.org/">Current Students Click Here </a></button>
+      <button style={{height:'100px', width:'200px', fontSize:'20px'}}> <a href = "/ResourcePage">Current Students Click Here </a></button>
           </div>
         </body>
     );
