@@ -31,16 +31,16 @@ export default class Reg extends Component {
         Nombre: <input type="text" name="name"/><br/><br/>
         Código Postal: <input type="text" name="zipcode"/><br/><br/>
         Correo Electrónico: <input type="text" name="email"/><br/><br/>
-        Como se entero acerca de PODER? <br/>
+        Cómo se enteró acerca de PODER? <br/>
         <input type="radio" name="referral" value="friendfam"/> Amigo o Familiar <br/>
-        <input type="radio" name="referral" value="community"/> Organizacion Comunitaria <br/>
+        <input type="radio" name="referral" value="community"/> Organización Comunitaria <br/>
         <input type="radio" name="referral" value="church"/> Iglesia <br/>
         <input type="radio" name="referral" value="other"/> Otro <br/>
         <input type="radio" name="referral" value="volunteer"/> Voluntario <br/>
         <input type="radio" name="referral" value="internet"/> Internet <br/>
         <input type="radio" name="referral" value="pamphlet"/> Folleto <br/>
         <br/>
-        Cual es la razon principal que usted tuvo para eligir PODER? <br/>
+        Cual es la razón principal que usted tuvo para eligir PODER? <br/>
         <input type="radio" name="choose" value="english"/> Aprender Ingles <br/>
         <input type="radio" name="choose" value="job"/> Obtener un trabajo <br/>
         <input type="radio" name="choose" value="training"/> Entrenamiento/asistencia de empleo <br/>
@@ -71,6 +71,10 @@ export default class Reg extends Component {
         Oral: <input type="text" name="oral"/> <br/>
         Written: <input type="text" name="written"/> <br/>
         Level: <input type="text" name="level"/> <br/>
+        Testing date: <input type="text" name="testdate"/> <br/>
+        BEST exam: <input type="text" name="best"/>
+        ICCB intake form: <input type="text" name="iccb"/>
+        Empowerment survey: <input type="text" name="empowerment"/>
       </form>
     );
   }
