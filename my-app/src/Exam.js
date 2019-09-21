@@ -30,6 +30,13 @@ export default class Exam extends Component {
     return (
       
       <form onSubmit={this.handleSubmit}>
+
+      <img src="1stExamPic.jpg" width="600px" height="200px"/> 
+      <img src="2ndExamPic.jpg" width="600px" height="200px"/>
+      <img src="3rdExamPic.jpg" width="600px" height="200px"/>
+      <img src="4thExamPic.jpg" width="600px" height="200px"/>
+      <img src="5thExamPic.jpg" width="600px" height="200px"/>
+      <img src="6thExamPic.jpg" width="600px" height="200px"/>    
       <h3>1. What's the mother's name? </h3>
       <input type="radio" name="q1" value="a"/> His name is Pilar.<br/>
       <input type="radio" name="q1" value="b"/> Their name is Pilar.<br/>
