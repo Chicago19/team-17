@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 
-export default class Exam extends Component {
+export default class Score extends Component {
   constructor(props) {
     super(props);
 
@@ -28,14 +28,26 @@ export default class Exam extends Component {
 
   render() {
     return (
-        <img src="1stExamPic.jpg" width="600px" height="200px"/>
-        <img src="2ndExamPic.jpg" width="600px" height="200px"/>
-        <img src="3rdExamPic.jpg" width="600px" height="200px"/>
-        <img src="4thExamPic.jpg" width="600px" height="200px"/>
-        <img src="5thExamPic.jpg" width="600px" height="200px"/>
-        <img src="6thExamPic.jpg" width="600px" height="200px"/>
-      
-      
+      <p> You got a 18/20 on the Entrance Exam!
+
+<form>
+<p>Please select your preferred orientation date:</p>
+<div>
+<input type="radio" id="contactChoice1"
+name="contact" value="email"/>
+<label for="contactChoice1">Monday September 23rd</label>
+<br/>
+<input type="radio" id="contactChoice2"
+name="contact" value="phone"/>
+<label for="contactChoice2">Wednesday September 25th</label>
+<br/>
+<br/>
+</div>
+<div>
+<button type="submit">Confirm Registration</button>
+</div>
+</form>
+      </p>
     );
   }
 }

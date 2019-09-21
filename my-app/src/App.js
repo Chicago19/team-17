@@ -4,17 +4,19 @@ import Login from './Login';
 import Reg from './Reg';
 import Exam from './Exam';
 import ResourcePage from './ResourcePage';
+import Score from './Score'
 
 function App() {
   return (
     <Router>
       <div>
-  
+
 
         <Route exact path="/" component={Login} />
          <Route path="/reg" component={Reg} />
          <Route path="/exam" component={Exam} />
          <Route path="/ResourcePage" component={ResourcePage} />
+         <Route path="/Score" component={Score} />
       </div>
     </Router>
   );
