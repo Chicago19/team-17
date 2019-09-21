@@ -28,9 +28,65 @@ export default class Reg extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        Nombre: <input type="text" name="name"/><br/><br/>
-        Código Postal: <input type="text" name="zipcode"/><br/><br/>
-        Correo Electrónico: <input type="text" name="email"/><br/><br/>
+
+        Nombre: <input type="text" name="name"/>
+        Apellido:<input type="text" name="lastName"/>
+      Segunda Nombre:<input type="text" name="middleName"/>
+    <br></br>
+      Fecha De Nacimiento:<input type="text" name="DOB"/><br/>
+      Correo Electrónico: <input type="text" name="email"/><br/><br/>
+      <text>Estado Civil:</text> <br></br>
+      <input type="radio" name="Estado Civil" value="Soltero/a"/> Single<br/>
+      <input type="radio" name="Estado Civil" value="Casado/a"/> Married<br/>
+      <input type="radio" name="Estado Civil" value="Viduo/a"/> Widowed<br></br>
+      <input type="radio" name="Estado Civil" value="Divorciado/a"/> Divorced<br></br>
+      <input type="radio" name="Estado Civil" value=""/> Other<input type="text" name="Otro"/><br></br>
+    <br></br>
+      <text>Género:</text> <br></br>
+      <input type="radio" name="Gender" value="Male"/> Male<br/>
+      <input type="radio" name="Gender" value="Female"/> Female<br/><br/>
+      Domicilio: <input type="text" name="Address"/><br/>
+      Ciudad:<input type="text" name="City"/><br></br>
+      Estado:<input type="text" name="State"/><br></br>
+      Código Postal: <input type="text" name="Zipcode"/><br></br>
+
+      Numero de celular: <input type="text" name="Zipcode"/><br></br>
+      Numero de telefono de casa:<input type="text" name="lastName"/><br></br>
+      <br></br>
+      Nombre de Contacto de Emergencia:<input type="text" name="Emergency contact name"/><br></br>
+      Numero de celular: <input type="text" name="Emergency cell"/><br></br>
+      Parentesco:<input type="text" name="Relationship"/><br></br>
+
+      <br></br>
+        <text>¿Es Hispano o Latino?</text> <br></br>
+        <input type="radio" name="Es Hispano o Latino?" value="Yes"/> Male<br/>
+        <input type="radio" name="Es Hispano o Latino?" value="No"/> Female<br/>
+      <br></br>
+        País De Origen: <input type="text" name="Country of Origin"/>
+      <br/><br/>
+        <text>Are you from one or more of the following racial groups?</text> <br></br>
+        <input type="checkbox" name="Race" value="American Indian or Alaska Native"/> American Indian or Alaska Native<br/>
+        <input type="checkbox" name="Race" value="Asian"/> Asian<br/>
+        <input type="checkbox" name="Race" value="Black or African American"/> Black or African American<br></br>
+        <input type="checkbox" name="Race" value="Native Hawaiian or Pacific Islander"/> Native Hawaiian or Pacific Islander<br></br>
+        <input type="checkbox" name="Race" value="White"/> Divorced<br></br>
+        <input type="checkbox" name="Race" value="Hispanic or Latino"/> Hispanic<br></br>
+      <br></br>
+        <text>Identify your primary ethnic group:</text> <br></br>
+        <input type="radio" name="Race" value="American Indian or Alaska Native"/> American Indian or Alaska Native<br/>
+        <input type="radio" name="Race" value="Asian"/> Asian<br/>
+        <input type="radio" name="Race" value="Black or African American"/> Black or African American<br></br>
+        <input type="radio" name="Race" value="Native Hawaiian or Pacific Islander"/> Native Hawaiian or Pacific Islander<br></br>
+        <input type="radio" name="Race" value="White"/> Divorced<br></br>
+        <input type="radio" name="Race" value="Hispanic or Latino"/> Hispanic<br></br>
+      <br></br>
+        <text>Es inglés su segundo idioma?:</text> <br></br>
+        <input type="radio" name="Second Language" value="Yes"/> Yes<br/>
+        <input type="radio" name="Second Language" value="No"/> No<br/>
+        ¿Cuál es tu primer idioma?: <input type="text" name="Native Language"/>
+      <br/><br/>
+        Tiempo pasado en los Estados Unidos: <input type="text" name="Time in the USA"/>
+      <br/><br/>
         Cómo se enteró acerca de PODER? <br/>
         <input type="radio" name="referral" value="friendfam"/> Amigo o Familiar <br/>
         <input type="radio" name="referral" value="community"/> Organización Comunitaria <br/>
@@ -75,6 +131,7 @@ export default class Reg extends Component {
         BEST exam: <input type="text" name="best"/>
         ICCB intake form: <input type="text" name="iccb"/>
         Empowerment survey: <input type="text" name="empowerment"/>
+
       </form>
     );
   }
