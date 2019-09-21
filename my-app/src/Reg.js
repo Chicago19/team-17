@@ -35,6 +35,7 @@ export default class Reg extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <Alert variant="primary">
+        <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
           <Alert.Heading>Forma de Inscripción</Alert.Heading>
         </Alert>
         <Col sm={8}>

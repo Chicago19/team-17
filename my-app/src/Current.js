@@ -31,6 +31,7 @@ export default class Current extends Component {
     return (
       <p>
         <Alert variant="primary">
+        <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
             <Alert.Heading>Current Students Landing Page</Alert.Heading>
         </Alert>
         <h1> Welcome Back! You have earned <b>1 Star</b> for logging in today! </h1>

@@ -31,6 +31,7 @@ export default class ResourcePage extends Component {
     return (
       <p>
         <Alert variant="primary">
+        <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
             <Alert.Heading>Check your Progress</Alert.Heading>
         </Alert>
         <div align = "center">

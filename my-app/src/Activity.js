@@ -52,6 +52,7 @@ export default class Exam extends Component {
 
       <form onSubmit={this.handleSubmit}>
         <Alert variant="primary">
+        <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
           <Alert.Heading>Practice Activity</Alert.Heading>
         </Alert>
         <h6>Use the picture below to answer Questions 1-3</h6>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import Alert from 'react-bootstrap/Alert';
+
 
 export default class Score extends Component {
   constructor(props) {
@@ -29,6 +31,11 @@ export default class Score extends Component {
 
   render() {
     return (
+      <div>
+      <Alert variant="primary">
+      <a href="/"><img src = "/homeicon.png" align="right" height="50px" width="50px"/></a>
+        <Alert.Heading>Placement Exam</Alert.Heading>
+      </Alert>
       <p>We have recorded your placement exam score. The next step is choosing an orientation date to come in and get started with the program.
 
 <form onSubmit = {this.handleSubmit}>
@@ -49,6 +56,7 @@ name="contact" value="phone"/>
 </div>
 </form>
       </p>
+      </div>
     );
   }
 }
